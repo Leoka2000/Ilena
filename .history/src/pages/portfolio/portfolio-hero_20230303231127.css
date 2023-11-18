@@ -1,0 +1,75 @@
+.portfolio-hero-section {
+    padding: 15rem 10rem 20rem 6rem;
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('../../assets/brand/background-imgs/portfolio-hero-img.jpg');
+    object-fit: contain;
+    background-position:35%;
+    background-attachment: fixed;
+    flex-direction: column;
+    color: azure;
+    align-items: flex-start;
+   display: flex;
+   gap: 1rem;
+   
+}
+.portfolio-hero-section > p {
+    font-size: 13px;
+font-weight: 700;
+color: rgb(189, 161, 1);
+margin-bottom: 15px;
+-webkit-animation-delay: .2s;
+animation-delay: .2s;
+text-transform: uppercase;
+letter-spacing: 5px;
+}
+.portfolio-hero-section > h1 {
+    position: relative;
+    width: 30rem;
+    text-align: left;
+margin-bottom: 0;
+font-family: 'Oswald', sans-serif;
+font-size: 75px;
+text-transform: uppercase;
+-webkit-animation-delay: .4s;
+animation-delay: .4s;
+color: #fff;
+font-weight: 500;
+letter-spacing: 3px;
+}
+
+.portfolio-hero-section > h1 > span {
+    position: relative;
+   
+    margin-bottom: 0;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+.portfolio-hero-section > button {
+    
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    width: 9rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(189, 161, 1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.portfolio-hero-section > small {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    width: 30rem;
+    text-align: start;
+    line-height: 1.;
+}
+.portfolio-hero-section > button:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1,1);
+}

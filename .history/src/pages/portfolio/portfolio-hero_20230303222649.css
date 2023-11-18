@@ -1,0 +1,4 @@
+.portfolio-hero-section {
+    padding: 15rem 0 15rem 0;
+    background-image: linear-gradient(rgba(20, 0, 0, 0.5), rgba(61, 38, 38, 0.9)), url('../../assets/brand/hero-img.png');
+}

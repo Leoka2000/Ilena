@@ -1,0 +1,12 @@
+.portfolio-hero-section {
+    padding: 25rem 10rem 25rem 10rem;
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('../../assets/brand/background-imgs/portfolio-hero-img.jpg');
+    object-fit: cover;
+    background-position: top;
+    background-attachment: fixed;
+    flex-direction: column;
+    color: azure;
+    align-items: flex-start;
+   
+    justify-content: flex-start;
+}

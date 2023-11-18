@@ -1,0 +1,248 @@
+.common-section {
+    padding: 3.5rem 5rem 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    
+}
+
+.common-section > header {
+text-align: left;
+display: flex;
+flex-direction: column;
+margin-bottom: 3rem;
+text-align: center;
+align-items: center
+}
+.common-section > header > h1 {
+  font-size: 55px;
+
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: #101010;
+  position: relative;
+  text-transform: uppercase;
+
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
+ 
+}
+.common-section > header > h1 > span {
+    color: transparent;
+-webkit-text-stroke: 1px rgb(160, 22, 22, 0.829);
+opacity: .8;
+
+}
+.common-section > header > p {
+    font-family: 'Barlow', sans-serif;
+font-size: 18px;
+font-weight: 500;
+max-width: 40rem;
+line-height: 1.2em;
+color: #777;
+}
+.common-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+justify-content: center;
+
+}
+.common-thumbnail {
+    width: 18rem;
+    height: 16rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    
+    cursor: pointer;
+  
+}
+.blurhash {
+  z-index: 20;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+.common-thumbnail > img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    height: 100%;
+    display: block;
+   
+   
+}
+
+
+.common-thumbnail > img,
+.common-thumbnail > .content {
+  transition: 200ms ease-in-out;
+  border-radius: 12px;
+}
+
+
+.common-thumbnail:hover > img.blur {
+    filter: blur(5px);
+  }
+  
+  .common-thumbnail:hover > img.gray {
+    filter: grayscale(1);
+  }
+  
+  .common-thumbnail:hover > img.zoom {
+    transform: scale(1.1);
+  }
+  
+  .common-thumbnail > .content.fade {
+    opacity: 0;
+  }
+  .common-thumbnail:hover > .content.fade {
+    opacity: 1;
+  }
+  
+
+  .common-thumbnail {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: 0.2s;
+  }
+  .common-thumbnail:hover {
+   
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+  
+
+  .common-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .fade:hover .content {
+    opacity: 1;
+  }
+  
+  .image-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 55;
+  }
+  
+  .image-viewer img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+  
+  .image-viewer button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #8bb8c1;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 4px;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .image-viewer button:hover {
+    
+    transform: scale(1.1);
+    background-color: #6b8f96;
+  }
+  
+
+  @media (max-width: 768px) {
+    .common-section {
+      padding: 8rem 2rem;
+    }
+  
+    .common-section > header > h1 {
+      font-size: 45px;
+      line-height: 1.2em;
+      border: none;
+    }
+  
+    .common-section > header > p {
+      font-size: 16px;
+      max-width: 100%;
+    }
+  
+    .common-thumbnail {
+      width: calc(50% - 1rem);
+      height: 14rem;
+      min-width: 250px;
+    }
+  
+    .common-thumbnail > img {
+      height: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .common-section {
+      padding:5rem 0rem 3rem 0;
+    }
+    .product-container {
+      width: 17rem;
+    }
+    .common-main > div {
+      width: auto;
+    }
+    .common-section > main {
+      width: 100%;
+      display: flex;
+      padding-right: 0.4rem;
+    }
+  
+    .-section > header > h1 {
+      font-size: 35px;
+      line-height: 1.1em;
+      border: none;
+    }
+  
+    .common-section > header > p {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  
+    .common-thumbnail {
+      width: 100%;
+      height: 12rem;
+    }
+  }
+  
+
+  

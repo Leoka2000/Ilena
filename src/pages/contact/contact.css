@@ -1,0 +1,89 @@
+.contact-section {
+    padding: 13rem 4rem 5rem 4rem;
+    background-color: #e6e6e6;
+    color: #333;
+    font-family: 'Barlow', sans-serif;
+}
+.contact-section > header {
+    display: flex;
+    justify-content: start;
+   align-items: flex-start;
+   flex-direction: column;
+   text-align:left;
+  
+   ;
+   
+}
+.contact-section > header > h1 {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    width: 80%;
+
+}
+.contact-infos-main {
+    text-align: left;
+}
+.contact-infos-main > ul > p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Slab', serif;
+    color: rgba(160, 22, 22, 0.829);
+    border-top: 1px solid rgba(53, 53, 53, 0.25);
+    width: auto;
+}
+.contact-infos-main > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(53, 53, 53, 0.25);
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+    
+}
+
+/* Small screens */
+@media screen and (max-width: 576px) {
+    .contact-section {
+      padding: 8rem 1.5rem 5rem 1.5rem;
+    }
+  
+    .contact-section > header > h1 {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  
+    .contact-infos-main > ul > p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+  
+  /* Large screens */
+  @media screen and (max-width: 769px) {
+    .contact-section {
+        padding: 10rem .5rem 5rem .5rem;
+    }
+    .contact-infos-main, .contact-section > header {
+     padding-left: 1.5rem;
+  }
+  
+    .contact-section > header > h1 {
+      font-size: 1.5rem;
+      width: 80%;
+    }
+  
+    .contact-infos-main > ul > p {
+      font-size: 1.25rem;
+    }
+    .contact-infos-main > ul > li {
+      font-size: 1rem
+    }
+  }
+  
+ 

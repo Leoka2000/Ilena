@@ -1,0 +1,228 @@
+.about-section {
+    padding: 5rem 6rem 5rem 5rem;
+    background-color: transparent;
+   
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Slab', serif;
+}
+
+.left-about  {
+    padding-right: 2rem;
+    font-family: 'Barlow', sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   gap: 0.5rem;
+}
+.left-about > h1 {
+   width: auto;
+    font-size: 80px;
+    line-height: 1.2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #101010;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width:350px;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.9rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  
+}
+.left-about > h1 > span {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(160, 22, 22, 0.829);
+    opacity: .8;
+}
+.left-about > p  {
+    color: rgb(97, 97, 97);
+    line-height: 1.5;
+   width: 90%;
+    max-width: 700px;
+    font-size: 15px;
+   
+}
+.about-icons-wrapper {
+    display: flex;
+    margin-top: 1rem;
+    color: rgb(97, 97, 97);
+    gap: 1rem;
+    align-items: center;
+}
+.about-icons-wrapper > span > a > svg {
+    color: rgb(97, 97, 97);
+}
+.about-icons-wrapper > span {
+    font-size: 1.25rem;
+    transition:0.3s;
+}
+.about-icons-wrapper >h1 {
+font-size: 1rem;
+}
+.about-icons-wrapper > span > a > svg {
+    transition: 0.2s;
+}
+.about-icons-wrapper > span > a > svg:hover {
+    color: rgb(160, 22, 22, 0.829);
+    cursor: pointer;
+}
+
+ .left-about > h3  {
+    color: rgb(160, 22, 22, 0.829);
+    font-size: 1.4rem;
+    
+}
+.left-about > h3 {
+    margin-bottom: 1rem;
+}
+.img-thumbnail {
+    width: 33rem;
+    height: 25rem;
+    position: relative;
+    border-radius: 12px;
+ 
+   
+}
+.img-thumbnail > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 13px solid #25262f;
+background-position: 2rem;
+   
+    border-radius: 8px;
+    
+   
+box-shadow: 0 16px 32px 8px rgba(0, 0, 0, 0.2);
+overflow:hidden;
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .left-about > h1 {
+        font-size: 60px;
+    }
+   .right-about {
+    display: flex;
+    justify-content: end;
+   }
+   .about-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+ } 
+    .img-thumbnail {
+        width: auto;
+        height: auto;
+        position: relative;
+        border-radius: 12px;
+        min-width: 330px;
+        min-height: 330px;
+     
+       
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .about-section {
+       display: flex;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+      
+       
+    }  .right-about {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .img-thumbnail > img {
+     width: 35rem;
+     border: 7px solid #25262f;
+    
+    
+    }
+}
+@media only screen and (max-width: 670px) {
+    .about-section {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+    } 
+    .right-about {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .left-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1.5rem;
+
+    }
+    .img-thumbnail > img {
+     width: 16rem;
+     border: 7px solid #25262f;
+    
+    
+    }
+    .right-about {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .img-thumbnail {
+        width: 20rem;
+        height: 90%;
+        position: relative;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+     
+       
+    }
+    .about-section {
+        padding: 5rem 0.5rem 5rem 0.5rem;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+    }
+    .left-about > h1 {
+        font-size: 70px;
+        text-align: center;
+        border-bottom: none;
+    }
+    .left-about > h3, .left-about > p {
+        text-align: center;
+    }
+    .about-icons-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .about-icons-wrapper > h1 {
+        text-align: center;
+        display: none;
+    }
+    .left-about > p {
+        width: 95%;
+        text-align: center;
+    }
+}
+

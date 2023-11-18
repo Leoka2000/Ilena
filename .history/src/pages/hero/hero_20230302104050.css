@@ -1,0 +1,9 @@
+.hero-section {
+    padding: 15rem 0 15rem 0;
+    background-image: url('../../assets/brand/hero-img.png');
+    object-fit: contain;
+    background-position: top;
+    background-attachment: scroll;
+  filter: brightness(0.7);
+  z-index: -1;
+}

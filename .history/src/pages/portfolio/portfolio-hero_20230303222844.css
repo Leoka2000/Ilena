@@ -1,0 +1,5 @@
+.portfolio-hero-section {
+    padding: 15rem 0 15rem 0;
+    background-image:  url('../../assets/brand/background-imgs/portfolio-hero-img.jpg');
+    object-fit: cover;
+}

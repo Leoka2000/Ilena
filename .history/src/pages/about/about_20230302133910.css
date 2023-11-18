@@ -1,0 +1,18 @@
+.about-section {
+    padding: 5rem 6rem 2rem 10rem;
+    background-color: #e6e6e6;
+    display: flex;
+}
+
+.img-thumbnail {
+    width: 30rem;
+    height: 25rem
+}
+.img-thumbnail > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 13px solid #25262f;
+padding: 0;
+box-shadow: 0 16px 32px 8px rgba(0, 0, 0, 0.2);
+}
